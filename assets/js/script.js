@@ -63,7 +63,7 @@ function createCurrentDashBoard(city, temp, wind, humidity, uv, icon){
     // get today's date
     var today = moment().format("(M/D/YYYY)")
     // get the image from the url
-    var weatherIcon = `http://openweathermap.org/img/wn/${icon}@2x.png`
+    var weatherIcon = `https://openweathermap.org/img/wn/${icon}@2x.png`
     
     // display the city and today's date
     $("#city-name").text(`${city} ${today}`)
@@ -105,7 +105,7 @@ function createCurrentDashBoard(city, temp, wind, humidity, uv, icon){
 
 // fetch the data
 function fetchData(city){
-    var geoApi = "http://api.openweathermap.org/geo/1.0/direct?q=" + city +"&limit=1&appid=" + apiKey
+    var geoApi = "https://api.openweathermap.org/geo/1.0/direct?q=" + city +"&limit=1&appid=" + apiKey
     fetch(geoApi)
     .then(res => res.json())
     .then(function(data){
@@ -132,7 +132,7 @@ function fetchData(city){
             for( var i = 0; i < 5; i++){
                 
                 // get the image for each day of the forecast
-                var weatherIcon = `http://openweathermap.org/img/wn/${data.daily[i].weather[0].icon}@2x.png`
+                var weatherIcon = `https://openweathermap.org/img/wn/${data.daily[i].weather[0].icon}@2x.png`
                 var icon = data.daily[i].weather[0].icon;
                 // get the tomorrow's date
                 var today = moment().add((i+1), "day")
