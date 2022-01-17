@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    
+    background: linear-gradient( to right,rgb(63, 134, 216), rgba(13, 13, 102, 0.87) );
+        
+        width: 100%o;
+        padding: 10px;
+        margin-bottom: 15px;
+       
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+}
+
+
+#input-field{
+    width: 100%;
+}
+
+.btn{
+    
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+
+#blue-btn{
+    background-color: rgb(19, 109, 226);
+    color: white;
+    margin-bottom: 12px;
+    
+
+}
+
+
+
+
+.gray-btn{
+    background-color: rgb(158, 149, 149);
+    color: black;
+    margin-top: 12px;
+    
+}
+
+#bottom-border{
+
+border-bottom: 2px solid black ;
+
+}
+
+
+
+#current-weather-dashboard{
+    display: none;
+    border: 1px solid black;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+
+.five-day-forecast{
+    background-color: rgba(16, 65, 156, 0.603);
+
+    /* rgba(4, 21, 53, 0.76); */
+    color: white;
+    margin: 2px 10px;
+    
+   
+}
+
+.weekly-forecast{
+    display: none;
+   
+    padding: 0;
+}
+
+
+
+
+
+
